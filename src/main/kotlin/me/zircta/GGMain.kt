@@ -4,7 +4,7 @@ import me.zircta.listener.ChatListener
 import net.weavemc.loader.api.ModInitializer
 import net.weavemc.loader.api.event.EventBus
 
-class ExampleMod: ModInitializer {
+class GGMain: ModInitializer {
     override fun preInit() {
         println("[GG] Initialized")
         EventBus.subscribe(ChatListener())
