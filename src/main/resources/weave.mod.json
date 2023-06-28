@@ -1,0 +1,7 @@
+{
+  "mixinConfigs": [],
+  "entrypoints": [
+    "me.zircta.GGMain"
+  ],
+  "hooks": []
+}
