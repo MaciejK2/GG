@@ -1,0 +1,27 @@
+name: Build Project
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3.5.2
+    - name: Grant permission
+      run: powershell -command "Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process"
+    - name: Build with Gradle
+      run: ./gradlew build
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3.1.2
+      with:
+        name: Compiled
+        path: build/libs/*.jar
