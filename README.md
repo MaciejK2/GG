@@ -4,8 +4,8 @@ AutoGG for your favorite servers.
 ---
 ## Note
 Currently this mod supports the following servers.
-1. Voxyl (voxyl.net)
-2. Minemen (minemen.club)
+- Voxyl (voxyl.net)
+- Minemen (minemen.club)
 
 ## Installation
 1. Install [Weave-Manager](https://github.com/exejar/Weave-Manager/releases)
