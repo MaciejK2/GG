@@ -10,7 +10,7 @@ Currently this mod supports the following servers.
 
 ## Installation
 1. Install [Weave-Manager](https://github.com/exejar/Weave-Manager/releases)
-2. Install & add [GG](https://github.com/Zircta/GG/releases) to Weave-Manager
+2. Install & add [GG](https://github.com/MaciejK2/GG/releases/) to Weave-Manager
 3. Launch Lunar Client
 4. Enjoy!
 ---
