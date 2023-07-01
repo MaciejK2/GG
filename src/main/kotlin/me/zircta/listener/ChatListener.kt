@@ -14,6 +14,7 @@ class ChatListener {
         currentServer = when {
             ip.contains("voxyl") || ip.contains("bedwarspractice") -> "voxyl"
             ip.contains("mineman") || ip.contains("minemen") -> "mmc"
+            ip.contains("kokscraft") || ip.contains("kokscraft") -> "kokscraft"
             else -> ""
         }
     }
@@ -29,6 +30,11 @@ class ChatListener {
             }
             "mmc" -> {
                 if (message == "Match Results (click player to view):") {
+                    Minecraft.getMinecraft().thePlayer.sendChatMessage("gg")
+                }
+            }
+            "kokscraft" -> {
+                if (message.startsWith("+") && message.contains("XP (mnoznik:")) {
                     Minecraft.getMinecraft().thePlayer.sendChatMessage("gg")
                 }
             }
